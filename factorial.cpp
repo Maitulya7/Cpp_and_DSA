@@ -9,29 +9,27 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include <iostream>
 #include<cmath>
+#include<math.h>
 
 using namespace std;
 
 int main()
 {
- // check number is prime or not 
+ // find the given number factorial
+int number1;
+
+cout<<"Enter the first number1: ";
+cin>>number1;
+
+
+int fact1 =1;
+for(int i = 2 ; i<=number1 ; i++){
+    fact1 = fact1 *i;
+}
+
+
+ cout<<"The factorial of "<<number1<<" is "<<fact1;
  
- int n;
- cout<<"Enter the number here: ";
- cin>>n;
- bool flag=0;
- 
- for(int i=2 ; i<=sqrt(n) ; i++){
-     if(n%i ==0){
-         cout<<"is non prime";
-         flag=1;
-         break;
-     }
- }
- 
-    if(flag==0){
-         cout<<"is the prime number";
-    }
      
 
     return 0;

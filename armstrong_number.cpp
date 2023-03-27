@@ -9,29 +9,37 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include <iostream>
 #include<cmath>
+#include<math.h>
 
 using namespace std;
 
 int main()
 {
- // check number is prime or not 
+ // check if given number is armstrong number or not 
  
  int n;
- cout<<"Enter the number here: ";
+ cout<<"Enter you number here: ";
  cin>>n;
- bool flag=0;
+ int original_n = n;
  
- for(int i=2 ; i<=sqrt(n) ; i++){
-     if(n%i ==0){
-         cout<<"is non prime";
-         flag=1;
-         break;
-     }
+ 
+ int sum = 0;
+ 
+ while(n>0){
+    int lastdigit = n%10;
+    sum += pow(lastdigit,3);
+    n = n/10; 
  }
  
-    if(flag==0){
-         cout<<"is the prime number";
-    }
+ if(original_n == sum){
+    cout<<"This number is armstrong number"<<endl;; 
+ }else{
+     cout<<"This number is not armstrong number"<<endl;;
+ }
+ 
+ 
+
+ 
      
 
     return 0;
