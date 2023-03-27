@@ -14,24 +14,22 @@ using namespace std;
 
 int main()
 {
- // check number is prime or not 
+ // revers a given number
  
  int n;
- cout<<"Enter the number here: ";
+ cout<<"Enter the number you want to revers here: ";
  cin>>n;
- bool flag=0;
+ int revers;
  
- for(int i=2 ; i<=sqrt(n) ; i++){
-     if(n%i ==0){
-         cout<<"is non prime";
-         flag=1;
-         break;
-     }
+ while(n>0){
+     int lastdigit = n%10;
+     revers = revers*10 + lastdigit;
+     
+     n = n/10;
  }
  
-    if(flag==0){
-         cout<<"is the prime number";
-    }
+ cout<<revers<<endl;
+ 
      
 
     return 0;
