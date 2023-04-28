@@ -1,9 +1,10 @@
+
 #include<iostream>
 using namespace std;
 
-int sum(int n){
+int sum(int a){
     int sum=0;
-    for(int i=0 ; i<=n;i++){
+    for(int i=0 ; i<=a ; i++){
         sum +=i;
     }
     return sum;
@@ -11,9 +12,8 @@ int sum(int n){
 
 
 int main(){
-    int n;
-    cout<<"Enter the last number to range: ";
-    cin>>n;
-    cout<<sum(n)<<endl;
-    return 0;
+    int a;
+    cout<<"Enter the number you want to add: ";
+    cin>>a;
+    cout<<"The total sum of first "<<a<<" natural number is: "<<sum(a)<<endl;
 }
