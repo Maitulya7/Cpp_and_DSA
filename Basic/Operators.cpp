@@ -68,6 +68,5 @@ if(number1 || number2 == 11){
 // miscellanenous
 
 
-
     return 0;
 }
