@@ -18,7 +18,7 @@ int main(){
             a[j+1] = a[j];
             j--;
         }
-        a[j+1] = current;
+        a[j+1] = current; 
         
     }
 
