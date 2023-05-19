@@ -1,26 +1,22 @@
 #include<iostream>
-#include<cmath>
-#include<math.h>
 using namespace std;
 
-   bool isPrime(int number){
-        for(int i=2 ; i<=sqrt(number);i++){
-            if(number % i == 0){
-                return false;
-            }
+bool isPrime(int n){
+    for(int i=2 ; i<n ; i++){
+        if(n % i == 0){
+            return 0;
         }
-        return true;
     }
+    return 1;
+}
 
 int main(){
-     int a,b;
-    cin>>a>>b;
-    
-    for(int i=a ; i<=b ; i++){
-        if(isPrime(i)){
-            cout<<i<<endl;
-        }
+    int n;
+    cin>>n;
+    if(isPrime(n)){
+        cout<<"Is the prime number"<<endl;
+    }else{
+        cout<<"Is not a prime number"<<endl;;
     }
-
-    return 0 ;
+     return 0;
 }
