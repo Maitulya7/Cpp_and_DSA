@@ -19,4 +19,4 @@ int main(){
         cout<<"Is not a prime number"<<endl;;
     }
      return 0;
-}
+}  

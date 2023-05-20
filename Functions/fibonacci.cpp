@@ -1,30 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
+void fibonacci() {
+    int n;
+    cin >> n;
+    int t1 = 0;
+    int t2 = 1;
 
-void fib(int n){
-    int t1=0;
-    int t2=1;
-    int nextTerm;
+    cout << t1 << " " << t2 << " "; // Print the first two terms of the series
 
-    for(int i=1 ; i<=n ; i++){
-        cout<<t1<<endl;
-        nextTerm = t1+t2;
-        t1=t2;
-        t2=nextTerm;
+    for (int i = 3; i <= n; i++) {
+        int t3 = t1 + t2;
+        cout << t3 << " ";
+        t1 = t2;
+        t2 = t3;
     }
-
-    return;
+    cout << endl;
 }
 
-
-int main(){
-
-    int n;
-    cout<<"Enter the number here: ";
-    cin>>n;
-
-    fib(n);
-
-    return 0 ;
+int main() {
+    fibonacci();
+    return 0;
 }
