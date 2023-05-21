@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+
 int binarySearch(int array[] , int n , int key){
     int starting =0;
     int ending =n;
