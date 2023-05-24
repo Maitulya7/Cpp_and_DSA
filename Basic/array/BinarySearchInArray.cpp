@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int binarySearch(int arr[], int n, int key) {
-    int start = 0;
-    int end = n - 1;
+int binarySearch(int array[] , int n , int key){
+    int starting =0;
+    int ending =n;
 
     while (start <= end) {
         int mid = start + (end - start) / 2; // its same as (start + end) / 2 ; 
